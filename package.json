@@ -1,0 +1,37 @@
+{
+  "name": "grunt-github-releaser2",
+  "description": "Create release on github.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sualko/grunt-github-releaser2",
+  "author": {
+    "name": "sualko",
+    "email": "klaus@jsxc.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sualko/grunt-github-releaser2"
+  },
+  "bugs": {
+    "url": "https://github.com/sualko/grunt-github-releaser2/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^1.0.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "github": "^9.0.0",
+    "q": "^1.4.1"
+  }
+}
