@@ -34,11 +34,13 @@ module.exports = function(grunt) {
         // Merge task-specific and/or target-specific options with these defaults.
         var options = this.options({
             repository: '',
-            authentication: {},
-            release: {
-                tag_name: grunt.file.readJSON('package.json').version
-            }
+            authentication: {}
         });
+
+        options.release = Object.assign({
+            tag_name: grunt.file.readJSON('package.json').version
+        }, options.release);
+
 
         var repository = options.repository.split('/');
 
